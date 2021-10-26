@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+*{
+	font-family: 'Acme', sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 2rem;
+	letter-spacing: 2px;
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	background-image: url(../imagenes/fondo1.jpg);
+	background-attachment: fixed;
+}
+.imgIndex{
+	height: 80vh;
+	background: url(../imagenes/imgHeroe1.png) no-repeat;
+	background-position: center;
+	
+}
+nav{
+	background-color: rgba(177, 245, 232, 0.7);
+	display: flex;
+	justify-content: space-between;
+}
+footer{
+	background: linear-gradient(to top, rgb(33, 82, 86), rgb(177, 245, 232));
+	display: flex;
+	justify-content: space-between;
+	padding-right: 6px;
+}
+h1{
+	color: rgb(103, 190, 173);
+	font-size: 6rem;
+	padding: 6px;
+}
+h2{
+	color: rgb(125, 163, 150);
+	font-size: 3.5rem;
+	padding: 6px;
+}
+h3{
+	color: rgb(175, 245, 232);
+	font-size: 3rem;
+	padding: 6px;
+}
+a{
+	text-decoration: none;
+}
+p, label, button, th{
+	color: rgb(110, 153, 136);
+	padding: 6px;
+	margin: 6px;
+	letter-spacing: 1px;
+	word-spacing: 4px;
+}
+
+nav ul ul{
+	position: absolute;
+	display: none;
+	background-color: rgba(177, 245, 232, 0.7);
+}
+	nav ul ul li{
+		display: block;
+		margin: 2px;
+	}
+	nav ul li:hover ul{
+		display: block;
+	}
+	nav ul ul li a:hover{
+		text-decoration: underline;
+	}
+nav ul li{
+	display: inline-block;
+	margin: 25px;
+	}
+	nav ul li a{
+	color: rgb(175, 245, 232);
+	list-style: none;
+	font-size: 2.5rem;	
+	}
+	nav ul li a.active{
+	text-decoration: underline;
+}
+article ul{
+	color: rgb(177, 245, 232);
+	margin: 6px;
+	list-style: none;
+	display: inline-block;
+}
+div ul li{
+	color: rgb(177, 245, 232);
+	margin: 6px;
+	list-style: none;
+	display: inline-block;
+
+}
+.sombra{
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.contenedor{
+	display: flex;
+	flex-wrap: wrap;
+}
+.w30{
+	width: 30%;
+	margin: 40px;
+	padding: 40px;
+}
+.w40{
+	width: 40%;
+	background-color: rgba(33, 82, 86, 1.0);
+	margin: 40px;
+	padding: 40px;
+}
+.w60{
+	width: 60%;
+	margin: 10px;
+}
+.justificar{
+	justify-content: space-between;
+}
+.justificar3{
+	justify-content: space-around;
+}
+/* ANIMACIONES */
+
+.thai{
+	animation-duration: 3s;
+	animation-name: thai;
+
+}
+
+@keyframes thai{
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0.5;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes cambioC{
+	0%{background-color: rgba(33, 82, 86, 1.0);}
+	25%{background-color: rgba(33, 82, 86, 0.3);}
+	50%{background-color: rgba(33, 82, 86, 0.5);}
+	75%{background-color: rgba(33, 82, 86, 0.7);}
+	100%{background-color: rgba(33, 82, 86, 1.0);}
+
+
+}
+.cambioColor{
+	animation-name: cambioC;
+	animation-iteration-count: infinite;
+	animation-timing-function:  ease-out;
+	animation-delay: 0s;
+	animation-duration: 5s;
+}
+
+.masProbado{
+	width: 30%;
+	padding: 10px;
+	display: inline-block;
+}
+.textoCentrado{
+	text-align: center;
+}
+.wImg{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
